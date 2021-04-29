@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ARUN-INKOOP
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+<style>
+ *{
+  box-sizing: border-box;
+ } 
+
+img {
+  display: block;
+  width: 100%;
+}
+.header{grid-area: header;}
+.nav{grid-area: nav;}  
+.main{grid-area: main;}
+.food-grid{grid-area:slide;}
+.righta{grid-area:righta;}
+.cart{grid-area: cart;}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 'header header header header header'
+  'nav main main main righta'
+  'cart slide slide slide slide';
+  grid-gap:40px;
+  padding: 25px;
+}
+.header{
+  font-size: 40px;
+  font-family: 'Orelega One',cursive;
+  padding: 10px;
+}
+.nav ul a{
+  font-family: monospace;
+  font-size: 20px;
+  list-style: none;
+  line-height: 50px;
+  text-decoration: none;
+  color: black;
+}
+.strike{
+  color:black;
+  transition-duration:0.17s
+}
+.strike:hover{
+  text-decoration:line-through;
+  text-decoration-color:#ff5c33
+;
+  text-decoration-thickness:2px; 
+}
+.button{
+      background-color: #ff5c33
+;
+      color: white;
+      font-size: 20px;
+      padding: 4px 18px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      border-radius:24px;
+      margin-left: 22px;
+    }
+    .button1{
+  background-color: #ff5c33
+; 
+  color: white; 
+  border: 2px solid #ff5c33
+;
+}
+
+.button1:hover {
+  background-color:white;
+  color: #ff5c33
+;
+}
+.righta{
+  font-family:monospace;
+  font-size: 18px;
+  text-align:left;
+  padding-bottom:25px; 
+}
+.righta hr{
+  width: 30%;
+  height: 4px;
+  border:none;
+  background-color: #ff5c33
+;
+  float: left;
+}
+.main{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  padding-left: 10px;
+}
+.food-grid{
+  display: grid;
+  float: right;
+  grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+  grid-gap: 2rem;
+  width:100%;
+  max-width: 1280px;
+  padding: 4px;
+  max-width: 0 auto;
+  margin:0 auto;
+
+}
+.food-image{
+  border-radius: 50%;
+  height: calc(100% - 7rem);
+  width: 100%;
+  object-fit:cover;
+  padding: 16px;
+}
+.foodsep{
+  border: 2px  solid white;  
+  background:white;
+  box-shadow:5px 10px 18px #cccccc;
+  border-radius: 16px;
+  text-decoration: none;
+  transition-duration: 0.4s; 
+  padding:6px;
+} 
+.foodsep:hover{
+  background-color: #ff5c33
+;
+  color:white;
+  border-color: #ff5c33
+;
+}
+.food-title{
+  font-family:'Ubuntu',sans-serif;
+  font-size:15px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.icon{
+  font-size: 25px;
+  padding: 30px;
+  display: none;
+}
+.icon a{
+
+  text-decoration: none;
+  color:#ff5c33
+;
+}
+@media only screen and (max-width: 600px) {
+html{
+  font-size: 55%;
+}
+.icon{
+  display: block;
+}
+.nav{
+  display: none;
+}
+.cart{
+  display: none;
+}
+.food-grid { 
+    grid-template-columns: auto auto;
+    width:100%;
+    padding: 2px; 
+    justify-content:center;
+}
+.header{grid-area: header;}
+#iconone{grid-area: iconone;}  
+#icontwo{grid-area:icontwo;}
+.main{grid-area: main;}
+.food-grid{grid-area:slide;}
+.righta{grid-area:righta;}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 'iconone header icontwo'
+  'main main main'
+  'slide slide slide'
+  'righta righta righta';
+  grid-gap:25px;
+  padding: 20px;
+}
+}
+</style>  
+</head>
+<body>
+<div class="grid-container">
+      <div class="header">Lorem<br>Ipsum</div>
+<div class="nav" id="nav-id">
+  <ul class="nav-list">
+    <a href="#about"><li class="strike">About</li></a>
+      <a href="#services"><li class="strike">Services</li></a>
+      <a href="#cuisine"><li class="strike">Cuisine</li></a>
+      <a href="#gallery"><li class="strike">Gallery</li></a>
+      <a href="#Contact"><li class="strike">Contact</li></a>
+      <a href="#book"><li class="strike">Book</li></a>
+      </ul>
+  </div>
+  <div class="cart">
+         <button class="button button1">Cart</button>
+      </div>
+  <div class="icon" id="iconone"><a href="nav-id" title="open list"><i class="fas fa-stream"></i></a>
+      </div>
+  <div class="icon" id="icontwo"><a href="cart-id" title="view cart"><i class="fas fa-shopping-cart"></i></a></div>
+<div class="main">
+  <h1>What are you<br>having for lunch?</h1>
+</div>
+<div class="food-grid">
+  <a href="mexicantaco.html" target="_blank" class="foodsep">
+      <img
+        class="food-image"
+        src="https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-600,h-450,fo-auto"
+        alt="mexicantaco">
+      <p class="food-title">
+        Mexican Taco
+      </p>
+    </a>
+    <a href="farmhousepizza.html"target="_blank" class="foodsep">
+      <img
+        class="food-image"
+        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"
+        alt="farmhousepizza"
+      >
+      <p class="food-title">
+        Farmhouse Pizza
+      </p>
+    </a>
+    <a href="chickenburger.html"target="_blank" class="foodsep">
+      <img
+        class="food-image"
+        src="https://nishkitchen.com/wp-content/uploads/2019/08/Butter-Chicken-Burger-1B.jpg"
+        alt="chickenburger"
+      >
+      <p class="food-title">
+        Chicken Burger
+      </p>
+    </a>
+    
+      <a href="Loaded-Nachos.html"target="_blank"class="foodsep">
+      <img
+        class="food-image"
+        src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9hZGVkJTIwbmFjaG9zfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+        alt="Loaded-Nachos"
+      >
+      <p class="food-title">
+        Loaded Nachos
+      </p>
+    </a>
+    
+     <a href="hakka-noodles.html"target="_blank" class="foodsep" id="hakka">
+      <img
+        class="food-image"
+        src="https://images.unsplash.com/photo-1617622141675-d3005b9067c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFra2ElMjBub29kbGxlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+        alt="hakka-noodles"
+      >
+      <p class="food-title">
+        Hakka Noodles
+      </p>
+    </a>
+ </div>
+ <div class="righta"><p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br>sed do eiusmod
+      tempor <br>incididunt ut labore et.</p><hr></div>
+</div>   
+</body>
+</html>
