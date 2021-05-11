@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SPHERE INDIA ASSIGNMENT</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+
+	<style>
+		.header{grid-area:header}
+		.navbar{grid-area:nav}
+		.hero{grid-area: hero}
+		.about{grid-area: about}
+		
+		.grid-container{
+		display: grid;
+		grid-template-areas: 'header header header header header header '
+		'nav nav nav  nav nav nav'
+		'hero hero hero  hero hero hero'
+		'about about about  about about about';
+		grid-gap:10px;
+		padding: 15px;
+	}
+	.header a{
+		font-size: 40px;
+		margin:20px 30px;
+		color:#2eb82e;
+		list-style: none;
+	}	
+	span{
+font-family: 'Open Sans', sans-serif;
+font-weight: 800;
+	}
+	.navbar{
+		font-family: 'Open Sans', sans-serif;
+		font-weight:400;
+		display: flex;
+		padding: 10px;
+		margin:20px 30px;
+		background-color:white;
+		justify-content: space-around;
+
+	}
+	.navbar a{
+		padding:10px;
+		color:black;
+		text-decoration: none;
+		align-content:center;
+		text-align: center;
+		font-size: 25px;
+		border-radius: 4px;
+		box-shadow:5px 10px 18px #cccccc;
+         transition-duration: 0.4s;
+	}
+	.navbar a:hover{
+				color:white;
+         		background-color:#2eb82e;
+         	    box-shadow:5px 10px 18px gold;
+
+
+
+	}
+	.hero{
+        display:flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-image:url(https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274__480.jpg);
+		padding:80px 120px;
+		border-radius: 
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment:fixed; 
+		box-shadow:5px 10px 18px #cccccc;
+		background-color:#adebad;
+		background-size: 100%;
+		background-blend-mode:darken;
+		border-radius: 10px;
+		margin: 20px 30px;
+	}
+	.hero:hover{
+		box-shadow:5px 10px 18px gold;;
+	}
+	.hero-inner{
+		font-size: 40px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		color:#2eb82e;}
+	.about{
+		margin:20px 30px;
+		font-family: 'Open Sans', sans-serif;
+		font-size:20px;
+		padding:25px;
+		border-radius:8px;
+		border:5px solid ;
+		box-shadow:5px 10px 18px #cccccc;
+		transition-duration:0.4s
+    }
+    .about:hover{
+    	box-shadow:5px 10px 18px gold;
+    }
+    @media only screen and (max-width: 768px){
+    	.navbar{
+    		display: none;
+    	}
+    	.header{
+    		
+    		text-align: right;
+    		align-content: right;
+    	}
+    	.hero{
+    		background-size: cover;
+    	}
+    	.about{
+    		font-size:18px;
+    	}
+
+
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+	<div class="header"><a href="#home"><i class="fab fa-speakap"><span class="name">&#183;SPHERE</span></i></a></div>
+	<div class="navbar">
+		<a href="#about">About us</a>
+        <a href="#work">Our Work</a>
+        <a href="#partner">Partner</a>
+        <a href="#contact">Contact Us</a>
+	</div>
+	<section class="hero">
+		<div class="hero-inner">
+			<h3>SPHERE <span style="color:#f4c430">IN</span><span style="color: white">D</span><span style="color:#138808">IA</span></h3>
+		</div>
+	</section>
+	<div class="about">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+
+</body>
+</html>
