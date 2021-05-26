@@ -151,6 +151,7 @@ object-position:5px 50%
 	.bottom{
 		margin:auto;
 		height:auto;
+		display:flex;
 	}
 	.projectgrid{
 	display:flex;
