@@ -142,7 +142,7 @@ width: 200px;
 object-position:5px 50% 
 }
 @media only screen and (max-width: 600px) {
-img{
+.imgsec{
 	display:none;
 }
 
