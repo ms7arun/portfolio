@@ -141,6 +141,11 @@ height: 195px;
 width: 200px;
 object-position:5px 50% 
 }
+@media only screen and (max-width: 600px) {
+img{
+	display:none;
+}
+
 .contact{ 
 	margin-left:100px;
 	margin-top:100px;
