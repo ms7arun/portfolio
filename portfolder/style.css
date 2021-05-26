@@ -148,6 +148,10 @@ object-position:5px 50%
 	.imgback{
 	display:none;
 	}
+	.bottom{
+		margin:auto;
+		height:auto;
+	}
 }
 
 .contact{ 
