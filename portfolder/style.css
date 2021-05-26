@@ -145,6 +145,9 @@ object-position:5px 50%
 .imgsec{
 	display:none;
 }
+	.imgback{
+	display:none;
+	}
 }
 
 .contact{ 
@@ -212,8 +215,8 @@ hr {
 	color: gold;
 }
 .bottom p{
-	margin-top: 10px;
-	font-size: 20px;
+    margin-top: 10px;
+    font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
     text-align: center;
