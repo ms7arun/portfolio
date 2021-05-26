@@ -149,12 +149,10 @@ object-position:5px 50%
 	display:none;
 	}
 	.bottom{
-		margin:auto;
-		height:auto;
-		display:flex;
+		display:none;
 	}
-	.projectgrid{
-	display:flex;
+	.hr{
+		display:none;
 	}
 
 }
