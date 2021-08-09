@@ -1,124 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone of Ola Electric by Arun sankar</title>
+    <title>OLA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-</head>
-<style>
-    html{
-        background-color: black;
-        
-    }
-    body{
-        align-content: center;
-    
-    }
-    ul{
-        list-style-type: none;
-        overflow: hidden;
-    }
-    li{
-        float: right;
-        padding: 10px;
-        font-size: 16px;
-        margin: 10px;
-        vertical-align: middle;
-        position: relative;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    li:hover{
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:3%;
+            font-family: 'Poppins', sans-serif;
+            background-color: black;
+            color: white;
+        }
+        a{
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height:auto;
+        }
+        li{
+            list-style:none;
+            padding:15px;
+        }
+        li:hover{
         background-color: rgba(63, 62, 62, 0.918);
-    }
-    a{
-        color: white;
-    }
-    
-     .heroimage{
-        background-image: url(https://images.news18.com/ibnlive/uploads/2021/03/1615542553_ola-electric-scooter-3.png);
-        background-repeat: no-repeat;
-        background-attachment:scroll;
-        background-position:center;
-        background-size: contain;
-        width:1200px;
-        height: 500px;
-     }
-     
-    .herotext{
-        position:absolute;
-        text-align: center;
-        top:34px;
-        right:180px;
-        width:700px;
-        height:20px;
-        color:white;
-        font-family:sans-serif;
-        font-size:24px;
-        margin: 1px 100px;
-     }
-     .subscription{
-         position:absolute;
-         top:550px;
-         right:450px;
-         padding:2px;
-     }
-     .subscription input{
-         height: 40px;
-         width: 300px;
-         background-color: #353535;
-         border:none;
-     }
-    .subscription button{
-        height: 42px;
-        width: 100px;
-        background-color: #16aa51;
-        font-family: sans-serif;
-        color: white;
-        border:none;
-        padding: 4px;
-    }
-    .footer{
-        margin:20px;
-        color:#635f5b;
-        background-color: #151516;
-        padding: 20px;
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 20px;
-    }
-.footer a{
-    padding: 6px;
-    color: #635f5b;
+        }
+        #bike{
+            padding-top:7%;
+        }
+        header{
+            padding-bottom:5%;
+        }
+        #heroimage>img{
+            width: 100%;
+            height: auto;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            padding:2%;
+        }
+        input{
+            background-color: #353535;
+            border:none;
+            height: 40px;
+            text-align: center;
+            font-weight: 400;
+            font-family: poppins;
+        }
+        button{
+            background-color: #16aa51;
+            border:none;
+            height: 42px;
+            cursor:pointer;
+            font-weight: 400;
+            font-family: poppins;
+        }
+        button:hover{
+            filter: brightness(200%);
+        }
+        #video{
+            display: flex;
+            justify-content: center;
+        }
+        #footer{
+            padding:2%;
+            background-color: #635f5b;
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+        }
+        @media (max-width: 780px) {
+  #footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
-.footer a:hover{
-    color: white;
-}
-</style>
+
+        #icons{
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+        #policy{
+            word-spacing:4px;
+        }
+    </style>
+</head>
 <body>
-    <div class="header">
-    
-    <ul class="desktop">
-        <a href=""><li style="float: left; background-color: black;"><img src="olalogo.png" alt="logo"></li></a>
-        <a href=""><li>Hyper Charger</li></a>
-        <a href=""><li>Futurefactory</li></a>
-    </ul>
-    </div>
-    
-        <div class="herotext">
-            <h1>Mobility for the world,<br>sustainabilty for the future</h1>
-            </div>    
-         <div class="heroimage">
-        <div class="subscription">
-        <input type="text">
-        <button>Subscribe</button>
+    <header id="header">
+        <nav id="nav-bar">
+        <ul>
+            <a class="nav-link" href="#header"><li style="float:left"><img id="header-img"src="data:image/svg+xml,%3Csvg width='57' height='22' viewBox='0 0 57 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M46.2607 10.6562L51.6773 20.7574H56.9999L46.2607 0.736328L35.5215 20.7574L40.8485 20.7443L46.2607 10.6562Z' fill='white' /%3E %3Cpath d='M28.6323 16.0683L28.6498 0.720947H23.9434V20.7573H33.0067L35.5216 16.0683H28.6323Z' fill='white' /%3E %3Cpath d='M10.7523 6.70511e-06C4.82228 -0.00654826 0.00656167 4.79387 6.70511e-06 10.7261C-0.00654826 16.6584 4.79387 21.4719 10.7239 21.4785C16.654 21.485 21.4697 16.6846 21.4785 10.7523C21.485 4.82228 16.6824 0.00874666 10.7523 6.70511e-06ZM10.7305 16.5207C7.53822 16.5163 4.95119 13.9249 4.95337 10.7327C4.95993 7.53822 7.55133 4.95338 10.7436 4.95775C13.9402 4.96212 16.5229 7.55352 16.5185 10.748C16.5163 13.9402 13.9228 16.5251 10.7305 16.5207Z' fill='white' /%3E %3C/svg%3E" alt="logo"></li></a>
+            <a class="nav-link" href="#icons"><li style="float:right">Social</li></a>
+            <a class="nav-link" href="#form"><li style="float:right">Know more!</li></a>
+        </ul>
+        </nav>
+    </header>
+        <div id="bike">
+            <div id="herotext">
+                <h1>Mobility for the world,<br>sustainabilty for the future</h1>
+            </div>
+            <div id="heroimage"><img src="https://images.news18.com/ibnlive/uploads/2021/03/1615542553_ola-electric-scooter-3.png"></div>
         </div>
-    </div>
-    <div class="footer">
-    
-        <span style="float: left;"><a href=""><i class="fab fa-facebook"></i></a>  <a href=""><i class="fab fa-twitter-square"></i></a>  <a href=""><i class="fab fa-instagram"></i></a>  <a href=""><i class="fab fa-linkedin"></i></a>  <a href=""><i class="fab fa-youtube"></i></a>   </span>    © 2021 Ola Electric Mobility Pvt Ltd. All Rights Reserved.</span>        <span style="float: right;"> <a href="">Privacy Policy</a>     <a href="">Careers</a> </span></p> 
-    
-   </div>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" placeholder="Enter Mail-ID here" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/2CzqUt0u1yI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div id="footer">
+                <div id="icons">
+                <a href="https://www.facebook.com/pages/category/Science--Technology---Engineering/Ola-Electric-104817894981469/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/olaelectric?lang=en"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/olaelectric/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/olaelectric/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCq0Gj5tEf6xwvPTzx0ZxABQ"><i class="fab fa-youtube"></i></a> </div>
+                <p>© 2021 Ola Electric Mobility Pvt Ltd. All Rights Reserved.</p>  
+                <div id="policy">
+                <a href="">Privacy Policy</a>    
+                <a href="https://www.linkedin.com/company/olaelectric/?originalSubdomain=in">Careers</a></div>
+            </div>
 </body>
-</html>
